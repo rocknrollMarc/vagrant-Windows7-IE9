@@ -10,6 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "windowsIE9"
   config.vm.boot_timeout = 100
   config.vm.box_url = "http://aka.ms/vagrant-win7-ie9"
+  config.vm.network :private_network, ip: "192.168.50.4"
 
    config.vm.provider "virtualbox" do |vb|
   #   # Don't boot with headless mode
